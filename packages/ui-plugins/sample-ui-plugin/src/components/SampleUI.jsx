@@ -19,42 +19,29 @@ import React from "react";
 import { PluginView, TimelineToolbar } from '@assurance/timeline-bar';
 import { Item, Tabs, TabList, TabPanels } from "@adobe/react-spectrum";
 import ProviderTable from "./ProviderTable";
-import Timing from "./Timing";
-import DatastreamViewer from "./DatastreamViewer";
-import Validation from "./Validation";
-import ValidationBuilder from "./ValidationBuilder";
-import DatastreamHorinzontal from "./DatastreamHorizontal";
+import HomePage from "./HomePage";
+import ComparerPage from "./Comparer";
+import CompareDevice from "./CompareDevice";
+
 
 const SampleUI = () => (
   <PluginView>
     <Tabs aria-label="Sample UI Tabs" height="100%">
       <TabList>
-        <Item key="provider">Provider table</Item>
-        <Item key="timing">Timing view</Item>
-        <Item key="validation">Validation view</Item>
-        <Item key="validationBuilder">Validation Builder view</Item>
-        <Item key="datastream">Datastream viewer</Item>
-        <Item key="horizontal">Datastream horizontal</Item>
+        <Item key="appsessions">App Sessions</Item>
+        <Item key="comparer">Compare Sessions</Item>
+        <Item key="compdevice">Compare Device</Item>
       </TabList>
       <TabPanels>
-        <Item key="provider">
-          <ProviderTable />
+       <Item key="appsessions">
+          <HomePage />
         </Item>
-        <Item key="timing">
-          <Timing />
-        </Item>
-        <Item key="validation">
-          <Validation />
-        </Item>
-        <Item key="validationBuilder">
-          <ValidationBuilder />
-        </Item>
-        <Item key="datastream">
-          <DatastreamViewer />
-        </Item>
-        <Item key="horizontal">
-          <DatastreamHorinzontal />
-        </Item>
+        <Item key="comparer">
+          <ComparerPage />
+      </Item>
+      <Item key="compdevice">
+          <CompareDevice />
+      </Item>
       </TabPanels>
     </Tabs>
     <TimelineToolbar />

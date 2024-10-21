@@ -14,7 +14,8 @@
     "@assurance/event-data-viewer": "1.0.0",
     "@assurance/plugin-bridge-provider": "1.0.0",
     "@assurance/timeline-bar": "1.0.0",
-    "@assurance/timing-view": "1.0.0"
+    "@assurance/timing-view": "1.0.0",
+    "@spectrum-icons/workflow": "^4.2.15"
   },
   "devDependencies": {
     "parcel": "^2.10.3"
